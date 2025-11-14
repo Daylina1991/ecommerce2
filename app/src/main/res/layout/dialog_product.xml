@@ -1,46 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dialogRoot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:padding="16dp">
 
     <LinearLayout
-        android:id="@+id/container"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
+
+        <ImageView
+            android:id="@+id/ivImagenDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@color/fondoImagenClaro" />
+
+
+        <TextView
             android:id="@+id/etName"
-            android:hint="Nombre"
+            android:text="Notebook HP 15"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
-        <EditText
+
+        <TextView
             android:id="@+id/etCategory"
-            android:hint="Categoría"
+            android:text="Notebooks"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" />
 
-        <EditText
+
+        <TextView
             android:id="@+id/etPrice"
-            android:hint="Precio"
-            android:inputType="numberDecimal"
+            android:text="$150.500.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
 
-        <EditText
+
+        <TextView
             android:id="@+id/etStock"
-            android:hint="Stock"
-            android:inputType="number"
+            android:text="Stock disponible"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
-        <EditText
+
+        <TextView
             android:id="@+id/etDescription"
-            android:hint="Descripción"
+            android:text="Notebook HP 15: diseño elegante, pantalla de 15 pulgadas y rendimiento confiable para el día a día."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnComprar"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Comprar"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:icon="@drawable/ic_payment"
+                android:iconTint="@android:color/white"
+                app:iconPadding="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Agregar al carrito"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/black"
+                android:icon="@drawable/ic_add_shopping_cart"
+                android:iconTint="@android:color/white"
+                app:iconPadding="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar producto"
+            android:icon="@drawable/ic_remove_shopping_cart"
+            android:iconTint="@color/rojoAccion"
+            android:textColor="@color/black"
+            android:strokeColor="@color/black"
+            android:strokeWidth="1"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver productos similares "
+            android:icon="@drawable/ic_remove_shopping_cart"
+            android:iconTint="@color/rojoAccion"
+            android:textColor="@color/black"
+            android:strokeColor="@color/black"
+            android:strokeWidth="1"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnvolveralhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Volver al Inicio"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/black"
+            android:textColor="@color/black"
+            android:strokeColor="@color/black"
+            android:strokeWidth="1"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginBottom="48dp" />
     </LinearLayout>
 </ScrollView>
+

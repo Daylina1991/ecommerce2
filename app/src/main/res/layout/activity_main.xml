@@ -31,6 +31,6 @@
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_input_add"
         android:layout_margin="16dp"
-        app:layout_anchor="@id/rootLayout"
-        app:layout_anchorGravity="bottom|end"/>
+        android:layout_gravity="bottom|end" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

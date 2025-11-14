@@ -17,9 +17,9 @@ class ProductAdapter(
     private var products: List<Product> = emptyList()
 
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val nameTv: TextView = itemView.findViewById(R.id.tvName)
-        val categoryTv: TextView = itemView.findViewById(R.id.tvCategory)
-        val priceTv: TextView = itemView.findViewById(R.id.tvPrice)
+        val nameTv: TextView = itemView.findViewById(R.id.etName)
+        val categoryTv: TextView = itemView.findViewById(R.id.etCategory)
+        val priceTv: TextView = itemView.findViewById(R.id.etPrice)
         val btnEdit: ImageButton? = itemView.findViewById(R.id.btnEdit)
         val btnDelete: ImageButton? = itemView.findViewById(R.id.btnDelete)
     }
